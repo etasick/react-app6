@@ -2,7 +2,7 @@ const { writeFileSync } = require('fs');
 const { SitemapStream, streamToPromise } = require('sitemap');
 //const fetch = require('node-fetch'); // Ensure this is installed
 //import fetch from 'node-fetch';
-const baseUrl = 'https://vapesandcarts.com/';
+const baseUrl = 'https://perthcannaco.com/';
 
 const staticPaths = [
   { url: '/', changefreq: 'daily', priority: 1.0 },

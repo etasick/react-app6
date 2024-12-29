@@ -11,7 +11,7 @@ function Header({ cart }) {
         {/* Logo */}
         <h1 className="text-2xl font-bold tracking-wide">
           <Link to="/" className="hover:text-gray-400">
-            VapeandCarts
+            PerthCannaco
           </Link>
         </h1>
 

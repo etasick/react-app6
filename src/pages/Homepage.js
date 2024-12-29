@@ -9,8 +9,7 @@ import { Helmet } from 'react-helmet-async';
 const Homepage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const images = [
-    "https://www.butterflyassets.online/vapencartsinstore.webp",
-    "https://www.butterflyassets.online/vapesandcartsinstore2.webp",
+    "https://www.butterflyassets.online/perthcannacoslide2.webp",
   ];
 
   useEffect(() => {
@@ -47,9 +46,9 @@ const Homepage = () => {
   return (
     <div className="homepage">
        <Helmet>
-                <title>Michigan's #1 Cannabis Dispensary & Retailer VapesNcarts
+                <title>Perthcannaco: Buy Cannabis online in Australia|Weed,extracts,oils,edibles and Carts
                 </title>
-                <meta name="description" content="Michigan best Cannabis retail dispensary for weed, extracts, oils, edibles and accessories. Buy pot online at 100+ stores: Michigan, New York, Los angeles" />
+                <meta name="description" content="Perthcannaco is Australia's top cannabis dispensary for weed, extracts, oils, edibles and accessories.Order online and we deliver discreetly to all major cities: Perth,Melbourne, Adelaide,Sidney." />
             </Helmet>
       <div className="relative w-full h-80 overflow-hidden">
   <div
@@ -106,12 +105,12 @@ const Homepage = () => {
       <CategoryList/>
        {/* Promotional Section */}
       <section className="py-16 bg-gray-100 text-center">
-        <h2 className="text-3xl font-bold mb-6"> Why VapesCarts?</h2>
+        <h2 className="text-3xl font-bold mb-6"> Why Chose PerthCannaco?</h2>
         <div className="flex flex-wrap justify-center space-x-6">
           <div className="w-full md:w-1/3 p-4 bg-white shadow rounded">
-            <h3 className="text-xl font-semibold">We are the fastest in delivery</h3>
+            <h3 className="text-xl font-semibold">We deliver discreetly and fast all over Australia</h3>
             <p className="text-gray-600">
-              We have a 24h delivery span for all online orders.
+              We have a 24h delivery span for all online orders(whether you buy weed online from Perth,Sidney,Melbourne or Adelaide).
             </p>
           </div>
           <div className="w-full md:w-1/3 p-4 bg-white shadow rounded">
@@ -130,20 +129,21 @@ const Homepage = () => {
       </section>
       <div className="card max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
   <div className="p-6">
-    <h3 className="text-xl font-semibold text-gray-800 mb-3">Michigan's #1 Cannabis Dispensary & Retailer VapesNcarts</h3>
+    <h3 className="text-xl font-semibold text-gray-800 mb-3">Perthcannaco: Buy Cannabis online in Australia|Weed,extracts,oils,edibles and Carts
+    </h3>
     <p className="text-gray-600 mb-4">
-    Michigan best Cannabis retail dispensary for weed, extracts, oils, edibles and accessories. Buy pot online at 100+ stores: Michigan, New York, Los angeles
+    Perthcannaco is Australia's top cannabis dispensary for weed, extracts, oils, edibles and accessories.Order online and we deliver discreetly to all major cities: Perth,Melbourne, Adelaide,Sidney.
     </p>
   </div>
 </div>
 
       {/* FAQ Section */}
       <div className="container mx-auto px-4 py-8">
-        <h2 className="text-3xl font-bold text-center mb-6">Are you new to cannabis? We are here to help.</h2>
+        <h2 className="text-3xl font-bold text-center mb-6">If this is the first time your are ordering cannabis online in Australia? We are here to help.</h2>
         <div>
           {[
             {
-              question: "What is the best way to consume cannabis?",
+              question: "What is the most popular way to take cannabis?",
               answer:
                 "The most popular method of weed consumption is edibles mostly weed gummies",
             },
@@ -153,14 +153,14 @@ const Homepage = () => {
                 "We have a 30-day money back guarantee",
             },
             {
-              question: "What is THC",
+              question: "What is Medical cannabis",
               answer:
-                "THC is the active compound that causes the high in weed",
+                "Medical cannabis is based on prescription",
             },
             {
-              question: "Do you deliver only in Michigan?",
+              question: "Is delivery done only in Perth?",
               answer:
-                "If you order online we deliver all over the coutry from Michigan to Los Angeles,we also have store in over 100+ locations",
+                "If you order online we deliver all over the country from Perth to Melbourne",
             },
           ].map((faq, index) => (
             <div key={index} className="border border-gray-300 rounded-md mb-4">

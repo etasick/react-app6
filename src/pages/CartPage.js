@@ -64,7 +64,7 @@ function CartPage() {
                     <p className="text-slate-500">Size: {item.selectedVariation.size}</p>
                   )}
                   <p className="text-slate-600">
-                    Price: $
+                    Price: AU$
                     {(
                       item.selectedVariation?.price ??
                       item.product?.price ??
@@ -111,7 +111,7 @@ function CartPage() {
       {cart.length > 0 && (
         <div className="mt-6">
           <p className="text-xl font-bold">
-            Total Amount: ${totalAmount.toFixed(2)}
+            Total Amount: AU${totalAmount.toFixed(2)}
           </p>
           <button
             onClick={proceedToCheckout}

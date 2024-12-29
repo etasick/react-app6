@@ -10,16 +10,16 @@ function Footer({ cart }) {
         <div>
           <div className="flex items-center gap-2 text-xl font-bold">
             
-            <span>VapeandCarts</span>
+            <span>PerthCannaco</span>
           </div>
           <p className="text-base-content/90 mt-4">
-            Michigan's #1 cannbis dispensary with over 100+ locations.
+          Perthcannaco is Australia's top cannabis dispensary for weed, extracts, oils, edibles and accessories.Order online and we deliver discreetly to all major cities: Perth,Melbourne, Adelaide,Sidney.
           </p>
-          <p>Michigan,USA,info@vapesandcarts.com</p>
+          <p>Perth,Australia,info@PerthCannaco.com</p>
           <form className="mt-6">
             <fieldset>
               <label className="label label-text" htmlFor="subscribeLetter">
-                Subscribe to our newsletter
+                Join our mailing list for weekly info
               </label>
               <div className="flex w-full flex-wrap gap-1 sm:flex-nowrap">
                 <input
@@ -69,7 +69,7 @@ function Footer({ cart }) {
         <div>
           <nav>
             <h6 className="footer-title">Legal</h6>
-            <p>Disclaimer: Our products have intoxicating effects and may be habit forming. Cannabis can impair concentration, coordination, and judgement. Do not operate a vehicle or machinery under the influence of cannabis. There may be health risks associated with consumption of cannabis infused products. For use only by adults nineteen and older. Keep out of the reach of children.
+            <p>Disclaimer: All cannabis products sold on this website are for medicinal purposes only.
 
 </p>
 

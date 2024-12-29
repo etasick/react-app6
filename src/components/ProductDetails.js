@@ -106,10 +106,10 @@ const ProductDetails = () => {
           <div className="mt-4 text-lg font-semibold">
             Price:{" "}
             {product.isVariable
-              ? `From $${Math.min(
+              ? `From AU$${Math.min(
                   ...product.variations.map((v) => v.price)
                 ).toFixed(2)}`
-              : `$${(product.price || 0).toFixed(2)}`}
+              : `AU$${(product.price || 0).toFixed(2)}`}
           </div>
 
           {product.isVariable && (
@@ -131,7 +131,7 @@ const ProductDetails = () => {
                 <option value="">-- Select --</option>
                 {product.variations.map((variation) => (
                   <option key={variation.size} value={variation.size}>
-                    {variation.size} - ${variation.price.toFixed(2)}
+                    {variation.size} - AU${variation.price.toFixed(2)}
                   </option>
                 ))}
               </select>

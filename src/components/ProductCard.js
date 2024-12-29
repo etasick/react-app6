@@ -30,7 +30,7 @@ const ProductCard = ({ product }) => {
         />
         <div className="absolute top-2 left-2 bg-black text-white text-xs font-semibold px-2 py-1 rounded">
           {minPrice !== undefined
-            ? `From $${minPrice.toFixed(2)}`
+            ? `From AU$${minPrice.toFixed(2)}`
             : "Price not available"}
         </div>
       </Link>

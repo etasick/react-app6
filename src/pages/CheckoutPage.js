@@ -188,15 +188,15 @@ function CheckoutPage() {
         {cart.map((item) => (
           <div key={`${item.product._id}-${item.selectedVariation?.size || "simple"}`} className="mb-3">
             <p>
-              {item.product.name} - {item.selectedVariation?.size || "Default"}: {item.quantity} x $
+              {item.product.name} - {item.selectedVariation?.size || "Default"}: {item.quantity} x AU$
               {(item.selectedVariation?.price || item.product.price).toFixed(2)}
             </p>
           </div>
         ))}
-        <p>Subtotal: ${calculateCartTotal().toFixed(2)}</p>
-        <p>Discount: -${calculateDiscountAmount().toFixed(2)}</p>
-        <p>Shipping: ${selectedShippingMethod?.cost || 0}</p>
-        <p>Total: ${calculateTotalAmount().toFixed(2)}</p>
+        <p>Subtotal: AU${calculateCartTotal().toFixed(2)}</p>
+        <p>Discount: -AU${calculateDiscountAmount().toFixed(2)}</p>
+        <p>Shipping: AU${selectedShippingMethod?.cost || 0}</p>
+        <p>Total: AU${calculateTotalAmount().toFixed(2)}</p>
         {errors.cart && <p className="text-red-500">{errors.cart}</p>}
       </div>
 
@@ -244,7 +244,7 @@ function CheckoutPage() {
                 checked={selectedShippingMethod?._id === method._id}
                 onChange={() => setSelectedShippingMethod(method)}
               />
-              {` ${method.name} - $${method.cost}`}
+              {` ${method.name} - AU$${method.cost}`}
             </label>
           </div>
         ))}
